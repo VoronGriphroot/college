@@ -1,0 +1,13 @@
+num1,num2 = float(input()),float(input())
+
+if num1 > num2:
+    
+    print ("num1 max, num2 min")
+    
+elif num1<num2:
+    
+    print ("num2 max, num1 min")
+    
+else:
+    
+    print ("num1 = num2")
