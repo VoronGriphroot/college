@@ -1,0 +1,10 @@
+import math
+
+Hui = 1/4
+print ("x=")
+x = float(input())
+
+if x <= Hui:
+    print (math.sin(x))
+if x > Hui:
+    print (math.cos(x))
