@@ -1,0 +1,12 @@
+inch = 25.4
+print ("S1 mm =")
+S1 = float(input()) * inch
+print ("S2 inch =")
+S2 = float(input()) 
+
+if S1 > S2:
+    print ("S1>S2")
+elif S1 == S2:
+    print("S1==S2")
+else:
+    print (S2>S1)
