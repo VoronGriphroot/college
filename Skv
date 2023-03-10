@@ -1,0 +1,16 @@
+Pi = 3.14
+
+print ("r = ")
+r = float(input())
+print ("сторона квадрата = ")
+a = float(input())
+
+S = r**2 * Pi
+a = a**2
+
+if S > a:
+    print ("круг > квадоата")
+elif S == a:
+    print ("круг == квадоата")
+else:
+    print ("круг < квадоата")
