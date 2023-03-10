@@ -1,0 +1,13 @@
+U = 3.6
+print("U1 Km\h =")
+U1 = float(input())
+
+print("U2 M\s =")
+U2 = float(input()) * U
+
+if U1 < U2:
+    print ("U2 > U1")
+elif U1 == U2:
+    print ("U1 == U2")
+else:
+    print("U1 > U2")
