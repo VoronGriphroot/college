@@ -33,7 +33,11 @@ while(isOpen):
         
         a1=0
         a2=0
+        
         while(Forest):
+            
+            a11 = a1
+            a22 = a2
         
             os.system('cls||clear')
         
@@ -51,6 +55,10 @@ while(isOpen):
                 a2+=1
             if a3 == "a":
                 a2-=1
+            
+            if a3 =="w" or a3=="s" or a3=="d" or a3=="a":
+                
+                forest_chunk[a1+(a1-a11)*-1][a2+(a2-a22)*-1]="0"
         
     if choice == "2":
 
