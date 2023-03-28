@@ -1,8 +1,22 @@
 import os #os.system('cls||clear')
+import random
+
 isOpen = True
 
-def NOT():
-    print ("Действие не возможно")
+def Enemy():
+    VarX=0
+    VarY=0
+    if forest_chunk[VarX][VarY] != forest_chunk[a1][a2]:
+        if VarX != a1:
+            if VarX > a1:
+                VarX-1
+            else:
+                VarX+1
+        if VarY != a2:
+            if VarY > a2:
+                VarY-1
+            else:
+                VarY+1
 
 def options():
     print("\nсложность\n")
@@ -42,7 +56,7 @@ while(isOpen):
         ForestOpen = True
         
         while(ForestOpen):
-
+            
             a11 = a1
             a22 = a2
 
@@ -92,10 +106,7 @@ while(isOpen):
 
         options()
         os.system('cls||clear')
+        
     if choice == "0":
         isOpen = False
-        os.system('cls||clear')
-    else:
-        print ("\nне ясная команда\n")
-        input()
         os.system('cls||clear')
