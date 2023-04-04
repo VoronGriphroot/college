@@ -1,0 +1,28 @@
+import os
+while(True):
+    print("введите трёх значное число")
+    a = input()
+    if a.isdigit() == False:
+        print("НАПИСАТЬ ЧИСЛО, А НЕ ЭТУ....")
+        break
+    a = int(a)
+    if 99<a<1000 == False:
+        print("ТРЁХ ЗНАЧНОЕ ЧИСЛО!!!! .....")
+        break
+    print("введите число, любое")
+    b = input()
+    if b.isdigit() != True:
+        print("НАПИСАТЬ ЧИСЛО, А НЕ ЭТУ....")
+        break
+    b=int(b)
+    suma = 0
+    while a > 0:
+        digit = a % 10
+        suma = suma + digit
+        a = a // 10
+    if suma >= b:
+        print ("СБРОС")
+    else: 
+        print("СБРОСА НЕ БУДЕТ")
+    input()
+    os.system('cls||clear')
